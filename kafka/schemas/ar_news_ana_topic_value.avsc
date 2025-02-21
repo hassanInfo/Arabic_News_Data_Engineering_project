@@ -1,0 +1,17 @@
+{
+  "type": "record",
+  "name": "NewsArticleValue",
+  "fields": [
+    {"name": "title", "type": "string"},
+    {"name": "date", "type": "string"},
+    {"name": "image", "type": "string"},
+    {"name": "content", "type": "string"},
+    {"name": "url", "type": "string"},
+    {"name": "source", "type": "string"},
+    {"name": "word_count", "type": "int"},
+    {"name": "processed", "type": "boolean"},
+    {"name": "topic","type": "string"},
+    {"name": "geolocations", "type": {"type": "array", "items": "string"}},
+    {"name": "entities", "type": {"type": "array", "items": "string"}}
+  ]
+}

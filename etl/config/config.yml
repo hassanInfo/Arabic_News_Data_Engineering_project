@@ -1,0 +1,34 @@
+api:
+  groq:
+    model: "llama-3.1-8b-instant"
+    # model: "llama3-8b-8192"
+    # model: "llama3-groq-70b-8192-tool-use-preview"
+    # 6000 characters ÷ 4 ≈ 1500 tokens
+    limit_tokens: 6000
+    temperature: 0.1
+    maxtokens: 1000
+  
+  rapid:
+    base_url: "https://arabic-news-api.p.rapidapi.com"
+
+    endpoints:
+      aljazeera: "/aljazeera"
+      okaz: "/okaz"
+      france24_arabic: "/france24arabic"
+      cnn_arabic: "/cnnarabic"
+      hibapress: "/morocco/hibapress"
+      bbc_arabic: "/bbcarabic"
+      youm7: "/youm7"
+      rt_arabic: "/rtarabic"
+      skynews_arabic: "/skynewsarabic"
+
+    request_timeout: 30  
+    retry_attempts: 3  
+    request_per_min: 1
+    limit_articles: 30
+
+kafka_topics:
+  raw_data: ar_news_raw_topic
+  processed_data: ar_news_prc_topic
+  analyzed_data: ar_news_ana_topic
+

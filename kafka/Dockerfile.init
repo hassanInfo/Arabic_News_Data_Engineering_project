@@ -1,0 +1,7 @@
+FROM confluentinc/cp-kafka:7.3.2
+
+USER root
+
+RUN yum install -y jq
+
+USER appuser
