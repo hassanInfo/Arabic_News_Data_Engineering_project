@@ -84,7 +84,7 @@ def news_dag():
         )
 
         analyze_task = ArAnalysisOperator(
-                task_id=f"analyze",
+                task_id=f"analyze_load",
                 config=config,
                 api_key=os.getenv("GROQ-API-KEY"),
                 bootstrap_servers=os.getenv("KAFKA_BOOTSTRAP_SREVERS"),
