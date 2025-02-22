@@ -1,14 +1,7 @@
 # Arabic_News_Data_Engineering_project
 This project implements a scalable ETL pipeline to extract and process Arabic news content from over 9 sources including `Al Jazeera`, `BBC Arabic`, `CNN Arabic`, and `RT Arabic` via `RapidAPI`, loading the data into Google BigQuery using a modern data engineering stack.
-
 ## Architecture 
 ![System Architecture](assets/workflow.png) <!-- Add actual diagram path -->
-
-
-
-
-
-
 ## Technologies
 | Component          | Technology Stack          |
 |--------------------|---------------------------|
@@ -52,3 +45,8 @@ ETL Configuration
 # Choose service profile
 make up_build PROFILE=all 
 ```
+## Demo
+
+https://github.com/user-attachments/assets/af6bafb7-bfcd-42fa-b673-7a73b6fe4a23
+
+
